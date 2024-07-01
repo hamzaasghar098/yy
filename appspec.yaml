@@ -6,6 +6,9 @@ files:
 
 hooks:
   BeforeInstall:
+    - location: scripts/install_httpd.sh
+      timeout: 300
+      runas: root
     - location: scripts/stop_server.sh
       timeout: 300
       runas: root
